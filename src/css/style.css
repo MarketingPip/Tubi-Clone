@@ -2,6 +2,8 @@
 
 #first {
  padding-left:88px;
+   transition-delay: .25s;
+   transition: .5s ease-in-out;
 }
 
 
@@ -61,6 +63,12 @@ body.dark {
 }
 .sidebar:hover {
   width: 250px;
+}
+
+/* Hover effect to push section to right on menu hover */ 
+.sidebar:hover ~ section {
+  margin-left: 200px;
+  transition-delay: .25s;
 }
 
 .sidebar li {
